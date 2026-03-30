@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KARVAT | Empowering Rural India</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#ffede8",
+              "inverse-surface": "#442a22",
+              "primary-fixed-dim": "#ffb783",
+              "on-tertiary-fixed": "#241a00",
+              "surface-container-lowest": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "on-background": "#2c160e",
+              "surface": "#fff8f6",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#217128",
+              "surface-container-high": "#ffe2da",
+              "error": "#ba1a1a",
+              "inverse-primary": "#ffb783",
+              "on-surface-variant": "#564337",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#cca72f",
+              "primary": "#944a00",
+              "surface-variant": "#ffdbd0",
+              "tertiary-fixed": "#ffe088",
+              "secondary": "#1b6d24",
+              "on-primary-container": "#502600",
+              "on-tertiary-container": "#4e3d00",
+              "primary-fixed": "#ffdcc5",
+              "on-primary-fixed": "#301400",
+              "surface-bright": "#fff8f6",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#ffdbd0",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#713700",
+              "tertiary": "#735c00",
+              "primary-container": "#e67e22",
+              "outline-variant": "#dcc1b1",
+              "surface-dim": "#fbd1c4",
+              "on-secondary-fixed-variant": "#005312",
+              "tertiary-fixed-dim": "#e9c349",
+              "secondary-fixed": "#a3f69c",
+              "outline": "#897365",
+              "on-error": "#ffffff",
+              "on-surface": "#2c160e",
+              "on-secondary-fixed": "#002204",
+              "background": "#fff8f6",
+              "secondary-container": "#a0f399",
+              "surface-container-low": "#fff1ed",
+              "surface-tint": "#944a00",
+              "surface-container": "#ffe9e3",
+              "on-tertiary-fixed-variant": "#574500"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5 5-5 5-5-5 5-5zM5 25l5 5-5 5-5-5 5-5zm50 0l5 5-5 5-5-5 5-5zM30 50l5 5-5 5-5-5 5-5z' fill='%23944a00' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold tracking-tighter text-orange-900 dark:text-orange-100 font-headline" href="#">KARVAT</a>
+<div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] font-semibold tracking-tight">
+<a class="text-orange-700 dark:text-orange-400 border-b-2 border-orange-700 dark:border-orange-400 pb-1 hover:opacity-80 transition-all duration-300" href="../karvat_homepage/home.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="../karvat_about_us/about_us.html">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="../karvat_causes/causes.html">Causes</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-800 dark:hover:text-stone-200 hover:opacity-80 transition-all duration-300" href="../karvat_donation/donation.html">Donation</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 shadow-lg shadow-primary/20">
+                Donate Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden hero-pattern">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 space-y-8 z-10">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wide uppercase">
+                    Rooted in Transformation
+                </span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-background leading-[1.1] tracking-tight">
+                    Empowering the <span class="text-primary italic">Heart</span> of Rural India.
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    We bridge the gap between rural potential and sustainable growth, creating a cycle of self-reliance through grassroots education and healthcare.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all scale-100 active:scale-95 shadow-xl shadow-primary/30">
+                        Join Our Mission
+                    </button>
+<button class="flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                        Watch Our Story
+                    </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-tertiary-fixed rounded-full blur-3xl opacity-30"></div>
+<div class="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="portrait of a smiling girl in a rural Indian village classroom holding a book with warm sunlight filtering through the window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAonrVaOBOHp9AocXC5S0510oEoiqeSHb0oDSl0CIJg1Bd4heXy0Xr5EWBiKlZtCNROLJJ7J54g9DYNCxXn5fvigNCXT3EebReCDC6SOTWcdzw1YMkb-gxHFHKkaANaZKl0317UBgDmsOTPIfed4C1qrr8eUFknGr-WAObOP3D5Sbj-K9fSL_vMZCtXclfX8jTK7qICcT1GVWXuSdYDcnDvnmk2b-_MGvHwgjv7affgc3d_U3KEuiBBhyqN9uo2l42Pr3dNhV-AV18"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/40 to-transparent"></div>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 max-w-xs transform -rotate-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="volunteer_activism" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">50,000+</p>
+<p class="text-xs text-on-surface-variant">Lives Impacted Yearly</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Impact Stats -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center p-8 bg-surface-container-lowest rounded-3xl shadow-sm">
+<h3 class="text-4xl font-headline font-extrabold text-primary mb-2">150+</h3>
+<p class="text-on-surface-variant font-medium">Villages Served</p>
+</div>
+<div class="text-center p-8 bg-surface-container-lowest rounded-3xl shadow-sm">
+<h3 class="text-4xl font-headline font-extrabold text-secondary mb-2">12k</h3>
+<p class="text-on-surface-variant font-medium">Children Schooled</p>
+</div>
+<div class="text-center p-8 bg-surface-container-lowest rounded-3xl shadow-sm">
+<h3 class="text-4xl font-headline font-extrabold text-tertiary mb-2">85%</h3>
+<p class="text-on-surface-variant font-medium">Self-Reliance Rate</p>
+</div>
+<div class="text-center p-8 bg-surface-container-lowest rounded-3xl shadow-sm">
+<h3 class="text-4xl font-headline font-extrabold text-on-background mb-2">250</h3>
+<p class="text-on-surface-variant font-medium">Local Volunteers</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Causes Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-background mb-6">Current Causes</h2>
+<p class="text-lg text-on-surface-variant">Our focused initiatives aim to tackle systemic issues in rural infrastructure, health, and skill development.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group underline decoration-2 underline-offset-4" href="#">
+                    View All Causes
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Cause 1 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="hands of a teacher and a student holding a pencil together over a wooden desk in a bright classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuBo3EL4HkL-WaN4dIkI2hj56SEm5rW2CSYowyvMSdxr6Hc5qfFWN7k51UMPeVlGepYBQ5hIdE_z5Pn5tLiCVFpA8PTWajsy-4EJEiLhhX9yqanr_lJVKaZlegkjzZO2QQkhhkER9w68wowL15134MM7sc7wjpJh--TGDRHDourULhqPN2kmHe885I3ET6LJIiq-6-87m76bY-0DPj3xH0jtSoNmEqgGyWwnKl_2uLyyLyWEo71DCEL-kwtZFx3lHfYbq3ORVmhq0"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Education</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-4">The Digital Rural Lab</h4>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Bringing digital literacy and modern computing tools to 50 remote village schools in Maharashtra.</p>
+<!-- Impact Pulse Progress Bar -->
+<div class="space-y-2 mb-8">
+<div class="flex justify-between text-sm font-bold">
+<span>₹4,50,000 raised</span>
+<span class="text-secondary">75%</span>
+</div>
+<div class="h-3 bg-secondary-fixed-dim rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-secondary w-3/4 rounded-full"></div>
+</div>
+</div>
+<button class="w-full bg-surface-container-low text-on-background py-3 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-colors">
+                            Support This Cause
+                        </button>
+</div>
+</div>
+<!-- Cause 2 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="lush green agricultural field with solar panels in the background and a farmer examining a plant in the morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzxhSwCnRIwpBde-2wHLwR7o4BoHvLd1U0xEFSxrpsUNSxuaH6WpOEIo3_KifcCGcES1_MLMU4_vCM7By3rkvuX0ir8KC0fiDzqFoT-Eu8jmhMeq-Le56b66VJ6EZ2FmSqIfJeDYazeInaTyS58x_n-merOwm4LSyLs7f5LoRuuwCrzW_pxlsbd-fEXZzjRGKjs3SJUXOhwmwsdxYcdbWX1xsb4t9zJuas_zbjUKuzu5X9x94IE9MZlgrSc_UKlq2DTXz-UphupXM"/>
+<div class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Agriculture</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-4">Green Fields Project</h4>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Implementing sustainable irrigation systems and organic farming techniques for marginalized farmers.</p>
+<div class="space-y-2 mb-8">
+<div class="flex justify-between text-sm font-bold">
+<span>₹2,10,000 raised</span>
+<span class="text-secondary">40%</span>
+</div>
+<div class="h-3 bg-secondary-fixed-dim rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-secondary w-2/5 rounded-full"></div>
+</div>
+</div>
+<button class="w-full bg-surface-container-low text-on-background py-3 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-colors">
+                            Support This Cause
+                        </button>
+</div>
+</div>
+<!-- Cause 3 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="medical professional checking the vitals of an elderly villager in a mobile health clinic van" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdb38ZRN2I-iCSvW2mpegy6bu2oGVuZp5JuadbrvRCyahD6325nTTskTnIgnvbqrrdo8-Osgra_aqyfxnBl1owJoh5S56ZkYyMAQHrs44Lo7akJcFb0J3VRxWPcWGMbCkATHOAUHsYPfJ0VrqXRQ1qiPAYXdkCB_rjKzh73Gn8hoDBPwS444PfMMFr0Q_WrV8ywk3WzmHuT90xXVSMGcrDrRG9hbl6gYTt3XpDzlaKTFMqLMr83TeJjqflD2eQpdBlM1J4h0Uofac"/>
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Healthcare</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-4">Mobile Clinics</h4>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Providing essential healthcare services to villages without road access through our 4x4 clinics.</p>
+<div class="space-y-2 mb-8">
+<div class="flex justify-between text-sm font-bold">
+<span>₹8,90,000 raised</span>
+<span class="text-secondary">92%</span>
+</div>
+<div class="h-3 bg-secondary-fixed-dim rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-secondary w-[92%] rounded-full"></div>
+</div>
+</div>
+<button class="w-full bg-surface-container-low text-on-background py-3 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-colors">
+                            Support This Cause
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-4xl font-headline font-bold text-on-background mb-4">Voices of Impact</h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative order-2 md:order-1">
+<div class="absolute -top-10 -left-10 text-9xl text-primary/10 font-serif leading-none italic">“</div>
+<div class="bg-surface-container-lowest p-10 md:p-14 rounded-[3rem] shadow-xl relative z-10 border border-outline-variant/15">
+<p class="text-2xl md:text-3xl font-medium text-on-background leading-relaxed mb-10">
+                            "KARVAT didn't just give us resources; they gave us a blueprint for our future. My daughter is the first in our family to learn coding, and our farm yield has doubled."
+                        </p>
+<div class="flex items-center gap-5">
+<div class="w-16 h-16 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a proud Indian farmer in traditional attire looking into the camera with a warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNOzC8mHGXu45EldE6BtXMiJ_B2VsR2Nzofc_-bTUXHzg-UVV-HJcTxrEsvnElvImB7pR0qeYyvvHI6DCW-tLd60LBHmglUVM-M--tqteiNr8Xo470DD6-bONkR4t9f0Lx78NAju4Dnmkwv6Vkyl9l90dnHz5Jp57eskzunI4LjuZMMMupXHDNwkvojkMYDWVGbBUaIbmQs1lp1Xth2TLjB889n6L5o-JZH_X51sP-SqsTNAMdGij2wmOf6ril-yyjws2wHOMX9N8"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-xl">Ramesh Kulkarni</h5>
+<p class="text-on-surface-variant">Community Leader, Solapur</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 order-1 md:order-2">
+<div class="space-y-4">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-lg transform translate-y-8">
+<img class="w-full h-full object-cover" data-alt="village children playing joyfully in front of a colorful school mural" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKtAGGTPuqVDL8H-ZtI97TKWhB4dj4jwGF86AUhKqSTXg4v9KmaOX6qbCUFc8n3fcrXaZHmdraSJwx20-7IqQuExXya08XSf2r4-c0TUB3-q985vSJj7YZw-awEEQtKq2erjq6VXb2r8yJOfwOFeFsCWd2udyUCadMMZLs_DLzO3N9IZ5dGu9aPbRRtF3REfRucBnywPV8XJ4hZ3pkMrURDEn0N-lj4D0xqOZhvvGjEwJioRMgTFsp3qe4aD_PN4pXZp2R_4V3G9s"/>
+</div>
+<div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-lg bg-primary">
+<div class="p-6 flex flex-col h-full justify-between">
+<span class="material-symbols-outlined text-on-primary text-4xl" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-on-primary font-bold">Over 450 success stories recorded this year alone.</p>
+</div>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Indian woman working on a handloom weaving vibrant textile in a village workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDOpV6aR1q6yoFq84xNgwCNemcjwA03zbw89MaK1ah7XIRfTT6NCl9JG809Pn11c2Zv9qO6ve-EBh6VdZikeZzed9dFIRfyg2zLP6N05S6uYAHwq1BMrtQtLlHMFYDdj00OTo9d_h5XAtJYTimcLXfKoOrbxDyZX-FNO8Xd9lLurSx3wWdxoXmyHRL3pa9w7zSCVe3mh4c9TwhDM9ARqS6kLq4_U_uvbyLZuGvFqouIopMGLeylk5O892F4tFse4fhxJNOofWrQEQ"/>
+</div>
+<div class="aspect-square rounded-3xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="close up of hands holding a pile of fresh organic grains in a rural harvest setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbVznb8V4bMBFsRzurjXOjVLrkbwUc020TVvUZ_0UOVWqyczWlBiH_Fo1j9Yx3ANO0VQwvQjdH3r42ldiu0YsWj1zMoeQHUTjWjabu-0gV7Y87AI9-Q6tUB3wQRZmpOjXSFBQxjcSfcNUtL-1ATcI5kSwT6WmiuD1a968XPhWiCIu2q--ZCE_jYuSCi1DN8yzZz7mjHJJ-NdH8oL9dTqOciyMpZbGfMippNeMKW_dxxhDAOScMjPoLQMPb7R9FEf3v9ijfGw9Hlfg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 bg-on-background relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold text-white mb-8 leading-tight">Be the Change India <span class="text-primary-fixed-dim">Needs Today.</span></h2>
+<p class="text-xl text-surface-variant mb-12 opacity-90">Every contribution, no matter the size, fuels a journey of transformation. Start your impact journey with us.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary-fixed text-on-primary-fixed px-10 py-5 rounded-2xl font-extrabold text-xl hover:bg-white transition-all transform hover:-translate-y-1">
+                    Monthly Giving
+                </button>
+<button class="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-extrabold text-xl hover:bg-white/10 transition-all transform hover:-translate-y-1">
+                    Become a Volunteer
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-6 border-t border-stone-200/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold text-orange-900 dark:text-orange-100 mb-4 block">KARVAT</span>
+<p class="text-stone-500 dark:text-stone-400 mb-6">
+                    Dedicated to transforming rural India through innovation, empathy, and community-driven action.
+                </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center hover:bg-primary transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center hover:bg-primary transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="group">group</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center hover:bg-primary transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-orange-900 dark:text-orange-100 mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Volunteer</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Annual Reports</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-orange-900 dark:text-orange-100 mb-6 uppercase tracking-widest text-xs">Programs</h6>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Child Education</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Women Empowerment</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Rural Healthcare</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Sustainable Farming</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors" href="#">Skill Training</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-orange-900 dark:text-orange-100 mb-6 uppercase tracking-widest text-xs">Stay Connected</h6>
+<p class="text-stone-500 dark:text-stone-400 mb-4 text-xs">Subscribe for updates on our latest projects and impact stories.</p>
+<div class="flex flex-col gap-3">
+<input class="bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 rounded-lg text-sm px-4 py-3 focus:ring-primary focus:border-primary" placeholder="Your email address" type="email"/>
+<button class="bg-orange-900 dark:bg-orange-100 text-white dark:text-orange-900 py-3 rounded-lg font-bold hover:opacity-80 transition-opacity">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-stone-200/10 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-xs">© 2024 KARVAT Foundation. Empowering rural India through sustainable growth.</p>
+</div>
+</footer>
+</body></html>
